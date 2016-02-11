@@ -1,0 +1,9 @@
+# Ignore les fichiers de base de Laravel
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+
+# Ignore les fichiers de configuration PhpStorm
+/.idea
