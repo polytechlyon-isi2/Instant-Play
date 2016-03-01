@@ -35,3 +35,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+Route::group(['middleware' => 'web'], function () {
+    Route::auth();
+
+    Route::get('/home', 'HomeController@index');
+});
