@@ -38,7 +38,7 @@
             <div class="clear"></div>
         </div>
 
-        @include('imports/nav.blade.php')
+        @include('nav')
 
         <div class="header_bottom">
             <div class="slider-text">

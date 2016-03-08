@@ -5,6 +5,8 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 
+
+@include('inmports.header')
 <div class="main">
     <div class="content">
         <div class="content_top">
@@ -272,5 +274,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div>
 </div>
-
+@include('imports.footer')
 
