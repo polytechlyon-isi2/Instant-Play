@@ -38,7 +38,7 @@
             <div class="clear"></div>
         </div>
 
-        @include('nav')
+        @include('imports.nav')
 
         <div class="header_bottom">
             <div class="slider-text">
