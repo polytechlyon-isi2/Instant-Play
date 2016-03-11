@@ -1,27 +1,53 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: GregoirePiat
- * Date: 08/03/16
- * Time: 14:45
+ * User: Nicolas
+ * Date: 11/03/2016
+ * Time: 11:19
  */
 ?>
 
 <!DOCTYPE HTML>
 <head>
-    <title>Free Ecomm Template Website Template | Home :: w3layouts</title>
+    <title>Free Ecomm Template Website Template | Preview :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
-
-   <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/> -->
-
+    <link href="<?php echo asset('css/style.css')?>" rel="stylesheet" type="text/css" media="all"/>
     <script type="text/javascript" src="<?php echo asset('js/jquery-1.9.0.min.js')?>"></script>
     <script src="<?php echo asset('js/jquery.openCarousel.js')?>" type="text/javascript"></script>
     <script type="text/javascript" src="<?php echo asset('js/easing.js')?>"></script>
     <script type="text/javascript" src="<?php echo asset('js/move-top.js')?>"></script>
+    <script src="<?php echo asset('js/easyResponsiveTabs.js')?>" type="text/javascript"></script>
+    <link href="<?php echo asset('css/easy-responsive-tabs.css')?>" rel="stylesheet" type="text/css" media="all"/>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="<?php echo asset('css/etalage.css')?>">
+    <script src="<?php echo asset('js/jquery.etalage.min.js')?>"></script>
+    <script>
+        jQuery(document).ready(function($){
+
+            $('#etalage').etalage({
+                thumb_image_width: 300,
+                thumb_image_height: 400,
+                source_image_width: 900,
+                source_image_height: 1200,
+                show_hint: true,
+                click_callback: function(image_anchor, instance_id){
+                    alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+                }
+            });
+
+        });
+    </script>
+    <script src="<?php echo asset('js/star-rating.js')?>" type="text/javascript"></script>
 </head>
 <body>
 <div class="header">

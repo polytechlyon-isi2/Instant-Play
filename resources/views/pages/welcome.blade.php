@@ -171,7 +171,7 @@
         </div>
     </div>
     <div class="product-articles">
-        <h3>Browse All Categories</h3>
+        <h3>Browse All Articles</h3>
         <ul>
             <li>
                 <div class="article">

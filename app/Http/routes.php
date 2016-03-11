@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('pages.welcome');
 });
 
+Route::get('/article', function () {
+    return view('pages.article');
+});
+
 //Routes pour toute la partie administration
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     //TODO Ajouter ici les routes pour l'administration
