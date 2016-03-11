@@ -15,10 +15,7 @@
             <div class="section group">
                 <div class="cont-desc span_1_of_2">
                     <ul class="back-links">
-                        <li><a href="#">Home</a> ::</li>
-                        <li><a href="#">Product Page</a> ::</li>
-                        <li>Product Name</li>
-                        <div class="clear"> </div>
+                        @yield('back-links')
                     </ul>
                     <div class="product-details">
                         <div class="grid images_3_of_2">

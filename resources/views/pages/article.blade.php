@@ -9,6 +9,13 @@
 
 @extends('layouts.preview')
 
+@section('back-links')
+    <li><a href="#">Home</a> ::</li>
+    <li><a href="#">Product Page</a> ::</li>
+    <li>Product Name</li>
+    <div class="clear"> </div>
+@endsection
+
 @section('product-images')
     <li>
         <a href="optionallink.html">
