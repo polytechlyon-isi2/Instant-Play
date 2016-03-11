@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('content')
-    <h3>Browse All Categories</h3>
+
+@section('articles')
     <div class="section group">
         <div class="grid_1_of_4 images_1_of_4">
             <h4><a href="preview.html">Whirlpool LTE5243D 3.4 CuFt.... </a></h4>
@@ -170,23 +170,21 @@
             </div>
         </div>
     </div>
-    <div class="product-articles">
-        <h3>Browse All Articles</h3>
-        <ul>
-            <li>
-                <div class="article">
-                    <p><span>Aenean vitae massa dolor</span></p>
-                    <p>Phasellus in quam dui. Nunc ornare, tellus rutrum porttitor imperdiet, dui leo molestie nisl, sit amet dignissim nibh magna pharetra quam. Nunc ultrices pellentesque massa, ac adipiscing dui rutrum id. In cursus augue non erat faucibus eu condimentum dolor molestie.</p>
-                    <p><a href="#">+ Read Full article</a></p>
-                </div>
-            </li>
-            <li>
-                <div class="article">
-                    <p><span>Phasellus sollicitudin consectetur</span></p>
-                    <p>Cras aliquam, odio ac consectetur tincidunt, eros nunc fermentum augue, quis rutrum ante lectus ac lectus. Fusce sed tellus orci, et feugiat urna. Integer et dictum leo. Nulla consectetur tempus orci sed consequat. Mauris cursus est a sapien venenatis faucibus. Etiam sagittis convallis volutpat.</p>
-                    <p><a href="#">+ Read Full article</a></p>
-                </div>
-            </li>
-        </ul>
-    </div>
+@endsection
+
+@section('articles')
+    <li>
+        <div class="article">
+            <p><span>Aenean vitae massa dolor</span></p>
+            <p>Phasellus in quam dui. Nunc ornare, tellus rutrum porttitor imperdiet, dui leo molestie nisl, sit amet dignissim nibh magna pharetra quam. Nunc ultrices pellentesque massa, ac adipiscing dui rutrum id. In cursus augue non erat faucibus eu condimentum dolor molestie.</p>
+            <p><a href="#">+ Read Full article</a></p>
+        </div>
+    </li>
+    <li>
+        <div class="article">
+            <p><span>Phasellus sollicitudin consectetur</span></p>
+            <p>Cras aliquam, odio ac consectetur tincidunt, eros nunc fermentum augue, quis rutrum ante lectus ac lectus. Fusce sed tellus orci, et feugiat urna. Integer et dictum leo. Nulla consectetur tempus orci sed consequat. Mauris cursus est a sapien venenatis faucibus. Etiam sagittis convallis volutpat.</p>
+            <p><a href="#">+ Read Full article</a></p>
+        </div>
+    </li>
 @endsection
