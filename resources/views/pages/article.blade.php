@@ -27,14 +27,6 @@
         <img class="etalage_thumb_image" src="images/preview-small-img2.png"  />
         <img class="etalage_source_image" src="images/preview-large-img2.jpg" title="" />
     </li>
-    <li>
-        <img class="etalage_thumb_image" src="images/preview-small-img3.png"  />
-        <img class="etalage_source_image" src="images/preview-large-img3.jpg" />
-    </li>
-    <li>
-        <img class="etalage_thumb_image" src="images/preview-small-img4.png" />
-        <img class="etalage_source_image" src="images/preview-large-img4.jpg" />
-    </li>
 @endsection
 
 @section('product-info')
@@ -46,17 +38,9 @@
     <div class="available">
         <ul>
             <li><span>Model:</span> &nbsp; Model 1</li>
-            <li><span>Shipping Weight:</span>&nbsp; 75.58 kg</li>
             <li><span>Units in Stock:</span>&nbsp; 566</li>
         </ul>
     </div>
-@endsection
-
-@section('product-color')
-    <li><input id="r1" name="r1" type="radio"><label for="r1" class="grey"> </label></li>
-    <li><input id="r2" name="r1" type="radio"><label for="r2" class="blue"> </label></li>
-    <li><input id="r3" name="r1" type="radio"><label class="white" for="r3"> </label></li>
-    <li><input id="r4" name="r1" type="radio"><label class="black" for="r4"> </label></li>
 @endsection
 
 @section('product-informations')
@@ -115,6 +99,7 @@
 @endsection
 
 @section('review')
+
     <h4>Lorem ipsum Review by <a href="#">Finibus Bonorum</a></h4>
     <ul>
         <li>Price : <div class="rating-stars"><div class="rating" data-rating-max="5"> </div> </div>
