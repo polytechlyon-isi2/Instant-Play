@@ -14,167 +14,68 @@
             <a href="index.html">Home</a>
         </li>
         <li  class="test">
-            <a href="#">Appliances</a>
+            <a href="#">Action</a>
             <ul>
-                <li>
-                    <a href="#">Cookware</a>
-                    <ul>
-                        <li><a href="#">Pots & Pans</a></li>
-                        <li><a href="#">Pressure Cookers</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Storage</a>
-                    <ul>
-                        <li><a href="#">Bottles & Sippers</a></li>
-                        <li><a href="#">Containers & Jars</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Cutlery & Tableware</a>
-                    <ul>
-                        <li><a href="#">Cutlery</a></li>
-                        <li><a href="#">Condiment Sets</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Bar Accessories</a>
-                    <ul>
-                        <li><a href="#">Bottle Openers</a></li>
-                        <li><a href="#">Flasks</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Platform games</a></li>
+                <li><a href="#">Shooter games</a></li>
+                <li><a href="#">Fighting</a></li>
+                <li><a href="#">Beat them all</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">Computers</a>
+            <a href="#">Action-adventure</a>
             <ul>
-                <li>
-                    <a href="#">Laptops</a>
-                    <ul>
-                        <li><a href="#">HP</a></li>
-                        <li><a href="#">Lenova</a></li>
-                        <li><a href="#">Dell</a></li>
-                        <li><a href="#">All Brands</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Computer Accessories</a>
-                    <ul>
-                        <li><a href="#">External Hard Disks</a></li>
-                        <li><a href="#">Pendrives</a></li>
-                        <li><a href="#">PC Components</a></li>
-                        <li><a href="#">Computer Peripherals</a></li>
-                        <li><a href="#">Datacards & Routers</a></li>
-                        <li><a href="#">Mouse</a></li>
-                        <li><a href="#">Laptop Skins & Decals</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Stealth game</a></li>
+                <li><a href="#">Survival horror</a></li>
+                <li><a href="#">Metroidvania</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">Health & Beauty</a>
+            <a href="#">Adventure</a>
             <ul>
-                <li><a href="#">Bath & Skin Care</a></li>
-                <li><a href="#">Health & Safety</a></li>
-                <li><a href="#">Maternity Care</a></li>
-                <li><a href="#">Body Care Combos</a></li>
-
+                <li><a href="#">Text adventures</a></li>
+                <li><a href="#">Graphic adventures</a></li>
+                <li><a href="#">Visual novels</a></li>
+                <li><a href="#">Interactive movie</a></li>
+                <li><a href="#">Real-time 3D adventures</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">Home & Garden</a>
+            <a href="#">Role-playing</a>
             <ul>
-                <li>
-                    <a href="#">Home Furnishing</a>
-                    <ul>
-                        <li><a href="#">Bed</a></li>
-                        <li><a href="#">Bath</a></li>
-                        <li><a href="#">Kitchen</a></li>
-                        <li><a href="#">Living</a></li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Home Decor</a>
-                    <ul>
-                        <li><a href="#">Flowers & Plants</a></li>
-                        <li><a href="#">Home Fragrances</a></li>
-                        <li><a href="#">Spiritual Decor</a></li>
-                        <li><a href="#">Wall Decor</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Gardening Tools</a>
-                </li>
+                <li><a href="#">Action RPG</a></li>
+                <li><a href="#">MMORPG</a></li>
+                <li><a href="#">Roguelike</a></li>
+                <li><a href="#">Tactical RPG</a></li>
+                <li><a href="#">Sandbox RPG</a></li>
+                <li><a href="#">Choices</a></li>
+                <li><a href="#">Fantasy</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">Office Supplies</a>
+            <a href="#">Strategy</a>
             <ul>
-                <li>
-                    <a href="#">Books</a>
-                    <ul>
-                        <li><a href="#">Academic & Professional</a></li>
-                        <li><a href="#">Entrance Exam</a></li>
-                        <li><a href="#">Literature & Fiction</a></li>
-                        <li><a href="#">Children & Teens</a></li>
-                        <li><a href="#">Indian Writing</a></li>
-                        <li><a href="#">New Releases</a></li>
-                        <li><a href="#">Bestsellers</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Stationery</a>
-                    <ul>
-                        <li><a href="#">Pens</a></li>
-                        <li><a href="#">Calculators</a></li>
-                        <li><a href="#">College Supplies</a></li>
-                        <li><a href="#">Art Supplies</a></li>
-                        <li><a href="#">Diaries & Notebooks</a></li>
-                        <li><a href="#">Gifting</a></li>
-                    </ul>
-                </li>
-
+                <li><a href="#">4X game</a></li>
+                <li><a href="#">Artillery game</a></li>
+                <li><a href="#">RTS</a></li>
+                <li><a href="#">MMORTS</a></li>
+                <li><a href="#">Tower defense</a></li>
+                <li><a href="#">Turn-based strategy</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">Sports Equipment</a>
+            <a href="#">Simulation</a>
             <ul>
-                <li>
-                    <a href="#">Fitness</a>
-                    <ul>
-                        <li><a href="#">Yoga Mats</a></li>
-                        <li><a href="#">Gym Gloves</a></li>
-                        <li><a href="#">Ab Exercisers</a></li>
-                        <li><a href="#">Gym Balls</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Indoor Sports</a>
-                    <ul>
-                        <li><a href="#">Chess</a></li>
-                        <li><a href="#">Darts</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Team Sports</a>
-                    <ul>
-                        <li><a href="#">Basketball</a></li>
-                        <li><a href="#">Cricket</a></li>
-                        <li><a href="#">Football</a></li>
-                        <li><a href="#">VolleyBall</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Racquet Sports</a>
-                    <ul>
-                        <li><a href="#">Badminton</a></li>
-                        <li><a href="#">Squash</a></li>
-                        <li><a href="#">Table Tennis</a></li>
-                        <li><a href="#">Tennis</a></li>
-                    </ul>
-                </li>
+                <li><a href="#">Construction and management simulation</a></li>
+                <li><a href="#">Life simulation</a></li>
+                <li><a href="#">Vehicule simulation</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Sports</a>
+            <ul>
+                <li><a href="#">Racing</a></li>
+                <li><a href="#">Sports game</a></li>
             </ul>
         </li>
         <li>
