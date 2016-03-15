@@ -51,7 +51,7 @@
         </li>
     </ul>
 
-    <div class="community-poll">
+    {{--<div class="community-poll">
         <h3>Community POll</h3>
         <p>What is the main reason for you to purchase products online?</p>
         <div class="poll">
@@ -84,5 +84,5 @@
                 </ul>
             </form>
         </div>
-    </div>
+    </div>--}}
 </div>

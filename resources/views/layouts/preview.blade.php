@@ -32,21 +32,7 @@
                                 <div class="button"><span><a href="#">Add to Cart</a></span></div>
                                 <div class="clear"></div>
                             </div>
-                            <div class="wish-list">
-                                <ul>
-                                    <li class="wish"><a href="#">Add to Wishlist</a></li>
-                                    <li class="compare"><a href="#">Add to Compare</a></li>
-                                </ul>
-                            </div>
                             <div class="colors-share">
-                                <div class="color-types">
-                                    <h4>Available Colors</h4>
-                                    <form class="checkbox-buttons">
-                                        <ul>
-                                            @yield('product-colors')
-                                        </ul>
-                                    </form>
-                                </div>
                                 <div class="social-share">
                                     <h4>Share Product</h4>
                                     <ul>
