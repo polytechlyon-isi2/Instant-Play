@@ -65,18 +65,29 @@
                     <div class="product_desc">
                         <div id="horizontalTab">
                             <ul class="resp-tabs-list">
+                                <li>Informations</li>
                                 <li>Specifications</li>
-                                <li>product Tags</li>
-                                <li>Product Reviews</li>
+                                <li>Videos</li>
+                                <li>Reviews</li>
                                 <div class="clear"></div>
                             </ul>
                             <div class="resp-tabs-container">
                                 <div class="product-specifications">
+                                    @yield('product-informations')
+                                </div>
+                                <div class="product-specifications">
+                                    <ul>
+                                        <li><span class="specification-heading">Operating System (OS):</span> <span>@yield('spec-os')</span><div class="clear"></div></li>
+                                        <li><span class="specification-heading">CPU:</span> <span>@yield('spec-cpu')</span><div class="clear"></div></li>
+                                        <li><span class="specification-heading">GPU:</span> <span>@yield('spec-gpu')</span><div class="clear"></div></li>
+                                        <li><span class="specification-heading">RAM:</span> <span>@yield('spec-ram')</span><div class="clear"></div></li>
+                                        <li><span class="specification-heading">HDD space:</span> <span>@yield('spec-hdd')</span><div class="clear"></div></li>
+                                    </ul>
                                     @yield('product-specifications')
                                 </div>
 
                                 <div class="product-tags">
-                                    @yield('product-tags')
+                                    @yield('product-videos')
                                 </div>
 
                                 <div class="review">
