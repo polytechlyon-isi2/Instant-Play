@@ -46,9 +46,9 @@
 
         <div class="header_bottom">
             <div class="slider-text">
-                <h2>Lorem Ipsum Placerat <br/>Elementum Quistue Tunulla Maris</h2>
-                <p>Vivamus vitae augue at quam frigilla tristique sit amet<br/> acin ante sikumpre tisdin.</p>
-                <a href="#">Sitamet Tortorions</a>
+                <h2>Instant Play <br/>You click you play</h2>
+                <p>Buy CD keys for PC games<br/> Lowest prices of the world.</p>
+                <a href="#">En savoir plus</a>
             </div>
             <div class="slider-img">
                 <img src="<?php echo asset('images/slider-img.png')?>" alt="" />
