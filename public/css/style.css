@@ -1010,6 +1010,31 @@ body {
 .product-specifications li:first-child span{
     border-top:1px solid #eee;
 }
+.product-video{
+    display:block;
+    height:400px;
+}
+.product-video li span.specification-heading{
+    color:#999999;
+    font-size:13px;
+    border-left:none;
+}
+.product-video li{
+    border:1px solid #eee;
+    border-top:none;
+}
+.product-video li span{
+    float:left;
+    width:47%;
+    padding:10px;
+    color:#23272a;
+    font-size:14px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    border-left:1px solid #EEE;
+}
+.product-video li:first-child span{
+    border-top:1px solid #eee;
+}
 .product-tags h4 {
     padding: 10px 0;
     font-size: 0.95em;

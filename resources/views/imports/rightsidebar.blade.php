@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="rightsidebar span_3_of_1 sidebar">
+<div class="rightsidebar span_3_of_1 sidebar" style="float:right;">
     <h3>Popular Products</h3>
     <ul class="popular-products">
         <li>

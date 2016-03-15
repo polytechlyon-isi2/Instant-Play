@@ -72,7 +72,7 @@
                                     @yield('product-specifications')
                                 </div>
 
-                                <div class="product-tags">
+                                <div class="product-video">
                                     @yield('product-videos')
                                 </div>
 

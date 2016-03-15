@@ -16,9 +16,17 @@
         <li><a href="#">Office supplies</a></li>
         <li><a href="#">Health & Beauty</a></li>
         <li><a href="#">Home & Garden</a></li>
-        <li><a href="#">Apparel</a></li>
-        <li><a href="#">Toys & Games</a></li>
-        <li><a href="#">Automotive</a></li>
+    </ul>
+</div>
+<div class="categories">
+    <ul>
+        <h3>Browse All Platforms</h3>
+        <li><a href="#">Appliances</a></li>
+        <li><a href="#">Sports Equipments</a></li>
+        <li><a href="#">Computers & Electronics</a></li>
+        <li><a href="#">Office supplies</a></li>
+        <li><a href="#">Health & Beauty</a></li>
+        <li><a href="#">Home & Garden</a></li>
     </ul>
 </div>
 <div class="buters-guide">
@@ -26,6 +34,9 @@
     <p><span>We want you to be happy with your purchase.</span></p>
     <p>So we're committed to giving you all the tools to make the right decision with minimum fuss. </p>
 </div>
+
+{{--
+
 <div class="add-banner">
     <img src="images/camera.png" alt="" />
     <div class="banner-desc">
@@ -42,3 +53,4 @@
     </div>
     <div class="clear"></div>
 </div>
+--}}

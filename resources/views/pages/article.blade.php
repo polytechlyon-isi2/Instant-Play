@@ -94,7 +94,7 @@
 
 @section('product-videos')
     <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed?v=N8lveDri3eU"></iframe>
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N8lveDri3eU"></iframe>
     </div>
 @endsection
 
