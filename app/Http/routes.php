@@ -11,17 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.welcome');
-});
+// Routes with controllers
 
-Route::get('/article', function () {
-    return view('pages.article');
-});
+Route::get('/', 'WelcomeController@index');
 
-Route::get('/cart', function () {
-    return view('pages.cart');
-});
+Route::get('/article', 'ArticleController@index');
+
+Route::get('/cart', 'CartController@index');
+
+Route::get('/contact', 'ContactController@index');
+
+Route::get('/user', 'UserController@index');
 
 //Routes pour toute la partie administration
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
