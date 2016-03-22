@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,12 +13,12 @@ class Command extends Model
     // 1:n
     public function user()
     {
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\Models\User');
     }
 
     // n:n
     public function games()
     {
-        return $this->belongsToMany('App\Game');
+        return $this->belongsToMany('App\Models\Game');
     }
 }

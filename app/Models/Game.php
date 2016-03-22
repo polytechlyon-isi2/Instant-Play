@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,49 +13,49 @@ class Game extends Model
     // 1:n
     public function studio()
     {
-        return $this->belongsTo('App\Studio');
+        return $this->belongsTo('App\Models\Studio');
     }
 
     public function platform()
     {
-        return $this->belongsTo('App\Platform');
+        return $this->belongsTo('App\Models\Platform');
     }
 
     public function video()
     {
-        return $this->belongsTo('App\Video');
+        return $this->belongsTo('App\Models\Video');
     }
 
     // 1:1
     public function spec()
     {
-        return $this->belongsTo('App\Spec');
+        return $this->belongsTo('App\Models\Spec');
     }
 
     // n:1
     public function photos()
     {
-        return $this->hasMany('App\Photo');
+        return $this->hasMany('App\Models\Photo');
     }
 
     // n:n
     public function commands()
     {
-        return $this->belongsToMany('App\Command');
+        return $this->belongsToMany('App\Models\Command');
     }
 
     public function categories()
     {
-        return $this->belongsToMany('App\Category');
+        return $this->belongsToMany('App\Models\Category');
     }
 
     public function reductions()
     {
-        return $this->belongsToMany('App\Reduction');
+        return $this->belongsToMany('App\Models\Reduction');
     }
 
     public function languages()
     {
-        return $this->belongsToMany('App\Language');
+        return $this->belongsToMany('App\Models\Language');
     }
 }

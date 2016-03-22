@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,6 @@ class Reduction extends Model
 
     public function games()
     {
-        return $this->belongsToMany('App\Game');
+        return $this->belongsToMany('App\Models\Game');
     }
 }

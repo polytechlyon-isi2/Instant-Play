@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -13,6 +13,6 @@ class Video extends Model
     // 1:n
     public function games()
     {
-        return $this->hasMany('App\Game');
+        return $this->hasMany('App\Models\Game');
     }
 }
