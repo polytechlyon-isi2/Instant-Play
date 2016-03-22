@@ -15,7 +15,7 @@
 
 Route::get('/', 'GameController@index');
 
-Route::get('article/{n}', 'GameController@show')->where('n', '[0-9]+');
+Route::get('/article/{n}', 'GameController@show')->where('n', '[0-9]+');
 
 Route::get('/cart', 'CartController@index');
 

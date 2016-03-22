@@ -16,7 +16,7 @@ class GameController extends Controller
 
     public function __construct(GameRepository $gameRepository)
     {
-        $this->middleware('auth', ['except' => ['index', 'indexTag']]);
+        $this->middleware('auth', ['except' => ['index', 'show']]);
         $this->middleware('admin', ['only' => 'destroy']);
 
         $this->gameRepository = $gameRepository;
@@ -48,6 +48,13 @@ class GameController extends Controller
         }
 
         return redirect(route('welcome'));
+    }
+
+    public function show($id)
+    {
+        $game = $this->gameRepository->getWithId($id);
+
+        return view('pages.article', compact('game'));
     }
 
     public function destroy($id)

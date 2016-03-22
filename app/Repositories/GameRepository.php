@@ -26,6 +26,16 @@ class GameRepository
             ->orderBy('game.id', 'desc');
     }
 
+    private function queryWithId($id)
+    {
+        return $this->game->where('id', $id);
+    }
+
+    public function getWithId($id)
+    {
+        return $this->queryWithId($id);
+    }
+
     public function getWithCategoriesAndLanguagesPaginate($n)
     {
         return $this->queryWithCategoriesAndLanguages()->paginate($n);
