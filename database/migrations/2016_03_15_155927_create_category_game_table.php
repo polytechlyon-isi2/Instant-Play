@@ -38,6 +38,6 @@ class CreateCategoryGameTable extends Migration
             $table->dropForeign('category_game_game_id_foreign');
         });
 
-        Schema::drop('post_tag');
+        Schema::drop('category_game');
     }
 }

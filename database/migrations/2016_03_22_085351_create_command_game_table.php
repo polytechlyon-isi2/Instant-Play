@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGameLanguageTable extends Migration
+class CreateCommandGameTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,16 +12,16 @@ class CreateGameLanguageTable extends Migration
      */
     public function up()
     {
-        Schema::create('game_language', function(Blueprint $table) {
+        Schema::create('command_game', function(Blueprint $table) {
             $table->increments('id');
-            $table->integer('language_id')->unsigned();
             $table->integer('game_id')->unsigned();
+            $table->integer('command_id')->unsigned();
 
-            $table->foreign('language_id')->references('id')->on('language')
+            $table->foreign('game_id')->references('id')->on('game')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
 
-            $table->foreign('game_id')->references('id')->on('game')
+            $table->foreign('command_id')->references('id')->on('command')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
         });
@@ -34,11 +34,11 @@ class CreateGameLanguageTable extends Migration
      */
     public function down()
     {
-        Schema::table('game_language', function(Blueprint $table) {
-            $table->dropForeign('game_language_language_id_foreign');
-            $table->dropForeign('game_language_game_id_foreign');
+        Schema::table('command_game', function(Blueprint $table) {
+            $table->dropForeign('command_game_game_id_foreign');
+            $table->dropForeign('command_game_command_id_foreign');
         });
 
-        Schema::drop('game_language');
+        Schema::drop('command_game');
     }
 }
