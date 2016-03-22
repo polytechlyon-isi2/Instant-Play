@@ -9,16 +9,35 @@
 
 @extends('layouts.app')
 @section('content')
+    {!! Form::open(['url' => 'contact']) !!}
 
-    {{ Form::open(array('url' => 'foo/bar')) }}
-    <?php
-    echo Form::label('email', 'E-Mail Address: ');
-    echo Form::text('email', 'Your email address');
-    echo Form::label('subject', 'Subject: ');
-    echo Form::text('subject', 'Subject');
-    echo Form::label('message', 'Message: ');
-    echo Form::text('message', 'Your message: ');
-    ?>
-    {{ Form::close() }}
+
+    {!! Form::label('nom', 'Nom : ') !!}
+
+    {!! Form::text('nom') !!}
+
+    {!! Form::label('prenom', 'Prénom : ') !!}
+
+    {!! Form::text('prenom') !!}
+
+    {!! Form::label('adresseMail', 'Mail : ') !!}
+
+    {!! Form::text('adresseMail') !!}
+
+    {!! Form::label('numTelephone', 'Téléphone : ') !!}
+
+    {!! Form::text('numTelephone') !!}
+
+    {!! Form::label('adresse', 'Adresse : ') !!}
+
+    {!! Form::text('adresse') !!}
+
+    {!! Form::label('dateNaissance', 'Date de naissance : ') !!}
+
+    {!! Form::text('dateNaissance') !!}
+
+
+    {!! Form::submit('Envoyer !') !!}
+
+    {!! Form::close() !!}
 @endsection
-

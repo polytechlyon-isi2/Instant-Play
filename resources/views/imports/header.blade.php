@@ -31,13 +31,6 @@
                 <a href="/Instant-play/public"><img src="<?php echo asset('images/logo.png')?>" alt="" /></a>
             </div>
             <div class="header_top_right">
-                <div class="search_box">
-                    <span>Search</span>
-                    <form>
-                        <input type="text" value=""><input type="submit" value="">
-                    </form>
-                    <div class="clear"></div>
-                </div>
             </div>
             <div class="clear"></div>
         </div>

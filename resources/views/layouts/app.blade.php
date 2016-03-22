@@ -20,4 +20,3 @@
     </div>
 </div>
 @include('imports.footer')
-
