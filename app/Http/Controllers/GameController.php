@@ -16,7 +16,7 @@ class GameController extends Controller
 
     public function __construct(GameRepository $gameRepository)
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);
+        $this->middleware('auth', ['except' => ['index', 'show', 'indexCategory']]);
         $this->middleware('admin', ['only' => 'destroy']);
 
         $this->gameRepository = $gameRepository;
@@ -24,7 +24,7 @@ class GameController extends Controller
 
     public function index()
     {
-        $games = $this->gameRepository->getWithCategoriesAndLanguagesPaginate($this->nbrPerPage);
+        $games = $this->gameRepository->getWithStudioAndCategoriesPaginate($this->nbrPerPage);
         $links = $games->setPath('')->render();
 
         return view('pages.welcome', compact('games', 'links'));
@@ -35,24 +35,24 @@ class GameController extends Controller
         return view('games.add');
     }
 
-    public function store(GameRequest $request, CategoryRepository $categoryRepository, LanguageRepository $languageRepository)
+    public function store(GameRequest $request, CategoryRepository $categoryRepository)
     {
         $inputs = array_merge($request->all(), ['user_id' => $request->user()->id]);
 
         $game = $this->gameRepository->store($inputs);
 
-        if(isset($inputs['categories']) && isset($inputs['languages']))
+        if(isset($inputs['categories']))
         {
             $categoryRepository->store($game, $inputs['categories']);
-            $languageRepository->store($game, $inputs['languages']);
         }
 
-        return redirect(route('welcome'));
+        return redirect(route('game.index'));
     }
 
     public function show($id)
     {
         $game = $this->gameRepository->getWithId($id);
+        //$game = Game::find($id);
 
         return view('pages.article', compact('game'));
     }
@@ -66,19 +66,10 @@ class GameController extends Controller
 
     public function indexCategory($category)
     {
-        $game = $this->gameRepository->getWithCategoriesAndLanguagesForCategoriesPaginate($category, $this->nbrPerPage);
+        $game = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
         $links = $game->setPath('')->render();
 
         return view('games.liste', compact('games', 'links'))
             ->with('category', 'Catégories : ' . $category);
-    }
-
-    public function indexLanguage($language)
-    {
-        $game = $this->gameRepository->getWithCategoriesAndLanguagesForLanguagesPaginate($language, $this->nbrPerPage);
-        $links = $game->setPath('')->render();
-
-        return view('games.liste', compact('games', 'links'))
-            ->with('language', 'Languages : ' . $language);
     }
 }

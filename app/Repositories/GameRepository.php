@@ -20,10 +20,10 @@ class GameRepository
         $this->game = $game;
     }
 
-    private function queryWithCategoriesAndLanguages()
+    private function queryWithCategories()
     {
-        return $this->game->with('category', 'language')
-            ->orderBy('game.id', 'desc');
+        return $this->game->with('categories')
+            ->orderBy('games.id', 'desc');
     }
 
     private function queryWithId($id)
@@ -36,25 +36,17 @@ class GameRepository
         return $this->queryWithId($id);
     }
 
-    public function getWithCategoriesAndLanguagesPaginate($n)
+    public function getWithCategoriesPaginate($n)
     {
-        return $this->queryWithCategoriesAndLanguages()->paginate($n);
+        return $this->queryWithCategories()->paginate($n);
     }
 
-    public function getWithCategoriesAndLanguagesForCategoriesPaginate($category, $n)
+    public function getWithCategoriesForCategoryPaginate($category, $n)
     {
-        return $this->queryWithCategoriesAndLanguages()
-            ->whereHas('category', function($q) use ($category)
+        return $this->queryWithCategories()
+            ->whereHas('categories', function($q) use ($category)
             {
-                $q->where('categories', $category);
-            })->paginate($n);
-    }
-
-    public function getWithCategoriesAndLanguagesForLanguagesPaginate($language, $n)
-    {
-        return $this->queryWithCategoriesAndLanguages()
-            ->whereHas('tags', function ($q) use ($language) {
-                $q->where('language', $language);
+                $q->where('categories.id', $category);
             })->paginate($n);
     }
 
