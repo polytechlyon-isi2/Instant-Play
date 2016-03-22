@@ -23,7 +23,7 @@ class GameRepository
     private function queryWithCategories()
     {
         return $this->game->with('categories')
-            ->orderBy('games.id', 'desc');
+            ->orderBy('game.id', 'desc');
     }
 
     private function queryWithId($id)
@@ -44,9 +44,9 @@ class GameRepository
     public function getWithCategoriesForCategoryPaginate($category, $n)
     {
         return $this->queryWithCategories()
-            ->whereHas('categories', function($q) use ($category)
+            ->whereHas('category', function($q) use ($category)
             {
-                $q->where('categories.id', $category);
+                $q->where('category.id', $category);
             })->paginate($n);
     }
 
