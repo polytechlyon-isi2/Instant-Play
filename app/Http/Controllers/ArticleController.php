@@ -8,8 +8,8 @@ use App\Http\Requests;
 
 class ArticleController extends Controller
 {
-    public function index()
+    public function show($n)
     {
-        return view('pages.article');
+        return view('pages.article')->with('numero',$n);
     }
 }
