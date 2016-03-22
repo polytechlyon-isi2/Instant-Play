@@ -10,11 +10,11 @@
 <div class="footer">
     <div class="wrap">
         <div class="copy_right">
-            <p>Copy rights (c). All rights Reseverd | <a href="index.php">Instant-play.dev</a> </p>
+            <p>Copy rights (c). All rights Reseverd | <a href="/Instant-play/public/">Instant-play.dev</a> </p>
         </div>
         <div class="footer-nav">
             <ul>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="/Instant-play/public/contact">Contact Us</a></li>
             </ul>
         </div>
     </div>

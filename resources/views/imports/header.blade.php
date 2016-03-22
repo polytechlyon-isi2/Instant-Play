@@ -28,7 +28,7 @@
     <div class="wrap">
         <div class="header_top">
             <div class="logo">
-                <a href="index.html"><img src="<?php echo asset('images/logo.png')?>" alt="" /></a>
+                <a href="/Instant-play/public"><img src="<?php echo asset('images/logo.png')?>" alt="" /></a>
             </div>
             <div class="header_top_right">
                 <div class="search_box">

@@ -79,7 +79,7 @@
             </ul>
         </li>
         <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="/Instant-play/public/contact">Contact Us</a>
         </li>
     </ul>
     <span class="left-ribbon"> </span>
