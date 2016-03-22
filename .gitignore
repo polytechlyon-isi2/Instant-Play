@@ -4,6 +4,7 @@
 Homestead.yaml
 Homestead.json
 .env
+.composer.lock
 
 
 # Ignore les fichiers de configuration PhpStorm
