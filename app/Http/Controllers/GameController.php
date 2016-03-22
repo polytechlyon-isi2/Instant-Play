@@ -27,7 +27,7 @@ class GameController extends Controller
         $games = $this->gameRepository->getWithCategoriesAndLanguagesPaginate($this->nbrPerPage);
         $links = $games->setPath('')->render();
 
-        return view('games.liste', compact('games', 'links'));
+        return view('pages.welcome', compact('games', 'links'));
     }
 
     public function create()
