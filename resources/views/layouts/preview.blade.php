@@ -7,7 +7,7 @@
  */
 ?>
 
-@include('imports.header_preview')
+@include('imports.header')
 
 <div class="main">
     <div class="wrap">

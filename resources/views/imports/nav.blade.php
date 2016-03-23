@@ -130,6 +130,12 @@
     <span class="right-ribbon"> </span>
 </div>
 --}}
+
+
+
+
+
+
 <div class="navigation">
     <a class="toggleMenu" href="#">Menu</a>
     <ul class="nav">
@@ -204,7 +210,6 @@
         <li>
             <a href="/Instant-play/public/contact">Contact Us</a>
         </li>
-        <li>
             <!-- Authentication Links -->
         @if (Auth::guest())
             <li><a href="{{ url('/login') }}">Login</a></li>
@@ -221,7 +226,7 @@
             <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
             </li>
             @endif
-            </li>
+
     </ul>
     <span class="left-ribbon"> </span>
     <span class="right-ribbon"> </span>

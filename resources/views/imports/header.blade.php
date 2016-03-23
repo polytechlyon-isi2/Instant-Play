@@ -9,19 +9,14 @@
 
 <!DOCTYPE HTML>
 <head>
-    <title>Free Ecomm Template Website Template | Home :: w3layouts</title>
+    <title>InstantPlay - You click, you play</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="<?php echo asset('css/style.css')?>" type="text/css">
 
-   <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/> -->
-
-    <script type="text/javascript" src="<?php echo asset('js/jquery-1.9.0.min.js')?>"></script>
-    <script src="<?php echo asset('js/jquery.openCarousel.js')?>" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo asset('js/easing.js')?>"></script>
-    <script type="text/javascript" src="<?php echo asset('js/move-top.js')?>"></script>
+    <!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/> -->
 </head>
 <body>
 <div class="header">

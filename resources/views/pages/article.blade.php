@@ -41,6 +41,13 @@
             <li><span>Units in Stock:</span>&nbsp; 566</li>
         </ul>
     </div>
+
+{{-- @foreach ($games as $game){
+        {{$game->name()}}
+    }
+--}}
+
+
 @endsection
 
 @section('product-informations')
@@ -135,3 +142,4 @@
         });
     </script>
 @endsection
+

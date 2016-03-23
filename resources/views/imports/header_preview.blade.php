@@ -6,9 +6,9 @@
  * Time: 11:19
  */
 ?>
-{{--
 
-<!DOCTYPE HTML>
+
+{{--<!DOCTYPE HTML>
 <head>
     <title>Free Ecomm Template Website Template | Preview :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -94,7 +94,7 @@
  */
 ?>
 
-        <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <head>
     <title>Free Ecomm Template Website Template | Home :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
