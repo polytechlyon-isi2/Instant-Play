@@ -24,7 +24,8 @@ class GameController extends Controller
 
     public function index()
     {
-        $games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
+        //$games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
+        $games = $this->gameRepository->getWholePaginate($this->nbrPerPage);
         $links = $games->setPath('')->render();
 
         return view('pages.welcome', compact('games', 'links'));
