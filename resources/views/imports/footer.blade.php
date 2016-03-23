@@ -28,11 +28,11 @@
 <a href="#" id="toTop"> </a>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-<script src="js/jquery.openCarousel.js" type="text/javascript"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/navigation.js"></script>
+<script type="text/javascript" src="/Instant-play/public/js/jquery-1.9.0.min.js"></script>
+<script src="/Instant-play/public/js/jquery.openCarousel.js" type="text/javascript"></script>
+<script type="text/javascript" src="/Instant-play/public/js/easing.js"></script>
+<script type="text/javascript" src="/Instant-play/public/js/move-top.js"></script>
+<script type="text/javascript" src="/Instant-play/public/js/navigation.js"></script>
 
 <!-- For the nav -->
 <!-- Fonts -->

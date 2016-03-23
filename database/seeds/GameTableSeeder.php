@@ -41,5 +41,23 @@ Un gameplay amélioré : DARK SOULS™ II inclut des animations fluides basées 
             'spec_id' => 1
         ]);
 
+        DB::table('game')->insert([
+            'id' => 2,
+            'name' => 'Battlefield 3',
+            'release_date' => '2011-10-25',
+            'price' => 23,
+            'stock' => 189,
+            'description' => 'Battlefield 3 prend une bonne longueur d\'avance sur ses concurrents grâce à la puissance du Frostbite 2, le moteur nouvelle génération du studio DICE. Cette technologie innovante est à la base de Battlefield 3, et permet d\'offrir une qualité graphique sans précédent, des environnements gigantesques, un niveau de destruction ahurissant, une ambiance sonore dynamique et des animations d\'un réalisme époustouflant. Les balles sifflent à vos oreilles, les murs s\'écroulent, les explosions vous projettent au sol, et le champ de bataille prend vie devant vos yeux comme jamais auparavant. Dans Battlefield 3, les joueurs vont pouvoir incarner les fameux Marines américains et découvrir des missions en solo incroyablement palpitantes ainsi qu\'un mode multijoueur compétitif, tout en voyageant aux quatre coins de la planète, et notamment à Paris, Téhéran et New York.
+
+    Frostbite 2 - Battlefield 3 utilise le moteur Frostbite 2, une technologie de pointe qui permet d\'obtenir des animations, un niveau de destruction, des effets de lumière, des environnements et une ambiance sonore inégalés. Grâce à ce moteur de jeu incroyablement puissant, Battlefield 3 plonge les joueurs dans le monde qui les entoure comme jamais auparavant.
+    Une expérience intense - Ressentez les impacts de balles et les explosions comme si vous y étiez, traînez vos coéquipiers blessés en lieu sûr et fixez vos armes quasiment où vous voulez. Les animations ultra réalistes de Battlefield 3, ainsi que ses graphismes spectaculaires et son gameplay criant de vérité s\'attaquent littéralement à vos sens pour vous faire vivre l\'expérience de combat la plus impressionnante jamais vue dans un FPS.
+    Des combats en véhicules hors pair - La meilleure expérience de combat à bord de véhicules franchit une nouvelle étape en vous laissant piloter des avions de chasse, en plus de nombreux autres véhicules sur terre, en mer ou dans les airs.
+    Combat urbain - Combattez dans différents lieux des États-Unis, du Moyen Orient et d\'Europe, et frayez-vous un chemin dans des ruelles étroites, des centres-villes et des zones dégagées permettant la progression de véhicules. Bienvenue dans la guerre moderne !',
+            'video' => 'https://youtu.be/9DM7NsxOS0Q',
+            'platform_id' => 2,
+            'studio_id' => 2,
+            'spec_id' => 2
+        ]);
+
     }
 }

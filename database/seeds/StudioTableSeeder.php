@@ -19,5 +19,10 @@ class StudioTableSeeder extends Seeder {
             'name' => 'From Software'
         ]);
 
+       DB::table('studio')->insert([
+            'id' => 2,
+            'name' => 'Dice'
+        ]);
+
     }
 }

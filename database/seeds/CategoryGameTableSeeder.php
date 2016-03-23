@@ -20,5 +20,11 @@ class CategoryGameTableSeeder extends Seeder {
             'game_id' => 1
         ]);
 
+        DB::table('category_game')->insert([
+            'id' => 2,
+            'category_id' => 2,
+            'game_id' => 2
+        ]);
+
     }
 }

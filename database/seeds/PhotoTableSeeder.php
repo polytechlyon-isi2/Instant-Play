@@ -20,5 +20,11 @@ class PhotoTableSeeder extends Seeder {
             'game_id' => 1
         ]);
 
+        DB::table('photo')->insert([
+            'id' => 2,
+            'name' => 'Battlefield3.jpg',
+            'game_id' => 2
+        ]);
+
     }
 }

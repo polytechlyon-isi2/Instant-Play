@@ -19,5 +19,10 @@ class LanguageTableSeeder extends Seeder {
             'name' => 'Français'
         ]);
 
+        DB::table('language')->insert([
+            'id' => 2,
+            'name' => 'Anglais'
+        ]);
+
     }
 }

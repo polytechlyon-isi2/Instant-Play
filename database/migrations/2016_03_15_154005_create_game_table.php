@@ -19,7 +19,6 @@ class CreateGameTable extends Migration
             $table->decimal('price', 5, 2);
             $table->integer('stock');
             $table->longText('description');
-            $table->string('video', 255);
 
             // platform
             $table->integer('platform_id')->unsigned();
@@ -37,6 +36,10 @@ class CreateGameTable extends Migration
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
 
+            // Video
+            $table->string('video', 255);
+
+            
             // spec
             $table->integer('spec_id')->unsigned();
             $table->foreign('spec_id')
