@@ -55,7 +55,7 @@ Un gameplay amélioré : DARK SOULS™ II inclut des animations fluides basées 
     Combat urbain - Combattez dans différents lieux des États-Unis, du Moyen Orient et d\'Europe, et frayez-vous un chemin dans des ruelles étroites, des centres-villes et des zones dégagées permettant la progression de véhicules. Bienvenue dans la guerre moderne !',
             'video' => 'https://youtu.be/9DM7NsxOS0Q',
             'platform_id' => 2,
-            'studio_id' => 1,
+            'studio_id' => 2,
             'spec_id' => 2
         ]);
 
