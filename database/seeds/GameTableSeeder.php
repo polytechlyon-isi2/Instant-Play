@@ -16,7 +16,7 @@ class GameTableSeeder extends Seeder {
 
         DB::table('game')->insert([
             'id' => 1,
-            'name' => 'From Software',
+            'name' => 'Dark Souls 2',
             'release_date' => '2014-03-14',
             'price' => 15,
             'stock' => 123,
