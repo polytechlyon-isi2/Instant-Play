@@ -20,5 +20,11 @@ class GameLanguageTableSeeder extends Seeder {
             'game_id' => 1
         ]);
 
+        DB::table('game_language')->insert([
+            'id' => 2,
+            'language_id' => 2,
+            'game_id' => 2
+        ]);
+
     }
 }

@@ -24,5 +24,14 @@ class SpecTableSeeder extends Seeder {
             'hdd' => '14 GB'
         ]);
 
+        DB::table('spec')->insert([
+            'id' => 2,
+            'os' => 'Win 7 64',
+            'cpu' => 'Core i5-4670 3.1GHz / APU A8-3870K Quad-Core',
+            'gpu' => 'GeForce GTX 760 / Radeon HD 6870',
+            'ram' => '4 GB',
+            'hdd' => '20 GB'
+        ]);
+
     }
 }

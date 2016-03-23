@@ -19,5 +19,10 @@ class PlatformTableSeeder extends Seeder {
             'name' => 'Steam'
         ]);
 
+        DB::table('platform')->insert([
+            'id' => 2,
+            'name' => 'Origin'
+        ]);
+
     }
 }
