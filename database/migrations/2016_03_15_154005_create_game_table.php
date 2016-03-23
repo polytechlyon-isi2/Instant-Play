@@ -19,6 +19,7 @@ class CreateGameTable extends Migration
             $table->decimal('price', 5, 2);
             $table->integer('stock');
             $table->longText('description');
+            $table->string('video', 255);
 
             // platform
             $table->integer('platform_id')->unsigned();
