@@ -21,11 +21,6 @@ class Game extends Model
         return $this->belongsTo('App\Models\Platform');
     }
 
-    public function video()
-    {
-        return $this->belongsTo('App\Models\Video');
-    }
-
     // 1:1
     public function spec()
     {
