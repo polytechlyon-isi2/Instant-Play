@@ -53,7 +53,7 @@ Un gameplay amélioré : DARK SOULS™ II inclut des animations fluides basées 
     Une expérience intense - Ressentez les impacts de balles et les explosions comme si vous y étiez, traînez vos coéquipiers blessés en lieu sûr et fixez vos armes quasiment où vous voulez. Les animations ultra réalistes de Battlefield 3, ainsi que ses graphismes spectaculaires et son gameplay criant de vérité s\'attaquent littéralement à vos sens pour vous faire vivre l\'expérience de combat la plus impressionnante jamais vue dans un FPS.
     Des combats en véhicules hors pair - La meilleure expérience de combat à bord de véhicules franchit une nouvelle étape en vous laissant piloter des avions de chasse, en plus de nombreux autres véhicules sur terre, en mer ou dans les airs.
     Combat urbain - Combattez dans différents lieux des États-Unis, du Moyen Orient et d\'Europe, et frayez-vous un chemin dans des ruelles étroites, des centres-villes et des zones dégagées permettant la progression de véhicules. Bienvenue dans la guerre moderne !',
-            'video' => 'https://youtu.be/9DM7NsxOS0Q',
+            'video' => 'https://www.youtube.com/embed/9DM7NsxOS0Q',
             'platform_id' => 2,
             'studio_id' => 2,
             'spec_id' => 2

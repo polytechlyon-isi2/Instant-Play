@@ -8,7 +8,6 @@
 ?>
 
 @include('imports.header')
-
 <div class="main">
     <div class="wrap">
         <div class="preview-page">
@@ -91,5 +90,6 @@
         @include('imports.topbar_recently_viewed')
     </div>
 </div>
-
+<script src="<?php echo asset('js/easyResponsiveTabs.js')?>" type="text/javascript"></script>
+<link href="<?php echo asset('css/easy-responsive-tabs.css')?>" rel="stylesheet" type="text/css" media="all"/>
 @include('imports.footer')

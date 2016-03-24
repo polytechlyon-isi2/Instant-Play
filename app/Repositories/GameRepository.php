@@ -9,6 +9,7 @@
 namespace App\Repositories;
 
 use App\Models\Game;
+use DB;
 
 class GameRepository
 {
@@ -29,8 +30,15 @@ class GameRepository
 
     private function queryWithId($id)
     {
-        return $this->game->where('id', $id)
-            ->with('studio', 'platform', 'spec', 'photos', 'reductions', 'categories', 'languages');
+/*        return $this->game->with('studio', 'platform', 'spec', 'photos', 'reductions', 'categories', 'languages')->where('id',$id);
+            ->with('studio', 'platform', 'spec', 'photos', 'reductions', 'categories', 'languages');*/
+
+        $game = DB::table('game')->where('id',$id)->first();
+        return $game;
+/*        return DB::table('game')
+            ->select('studio', 'platform', 'spec', 'photos', 'reductions', 'categories', 'languages')
+            ->where()
+            ->get();*/
     }
 
     private function queryWhole()

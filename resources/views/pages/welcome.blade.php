@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
     <div class="content-bottom-right">
         <h3>Browse All Products</h3>

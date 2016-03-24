@@ -54,8 +54,13 @@ class GameController extends Controller
     {
         $game = $this->gameRepository->getWithId($id);
         //$game = Game::find($id);
-
         return view('pages.article', compact('game'));
+
+/*        //$games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
+        $games = $this->gameRepository->getWholePaginate($this->nbrPerPage);
+        $links = $games->setPath('')->render();
+
+        return view('pages.article', compact('games', 'links'));*/
     }
 
     public function destroy($id)
