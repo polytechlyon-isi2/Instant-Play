@@ -7,7 +7,7 @@
            @foreach($games as $game)
             <div class="grid_1_of_4 images_1_of_4">
                 <h4><a href="article/{{$game->id}}">{{ $game->name }}</a></h4>
-                <a href="article/{{$game->id}}"><img src="http://localhost/Instant-play/public/images/games/{{ $game->photo->name }}" alt="" /></a>
+                <a href="article/{{$game->id}}"><img src="images/games/{{ $game->photo->name }}" alt="" /></a>
                 <div class="price-details">
                     <div class="price-number">
                         <p><span class="rupees">{{ $game->price }} € </span></p>
