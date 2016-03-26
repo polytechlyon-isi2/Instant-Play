@@ -6,7 +6,7 @@
 
            @foreach($games as $game)
             <div class="grid_1_of_4 images_1_of_4">
-                <h4><a href="{{ route('article', $game->id) }}">{{ $game->name }}</a></h4>
+                <h4><a href="{{ route('article', array('n' => $game->id )) }}">{{ $game->name }}</a></h4>
                 <a href="{{ route('article', $game->id) }}"><img src="images/games/{{ $game->photo->name }}" alt="" /></a>
                 <div class="price-details">
                     <div class="price-number">
