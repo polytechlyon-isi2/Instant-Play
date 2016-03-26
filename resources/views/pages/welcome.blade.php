@@ -6,14 +6,14 @@
 
            @foreach($games as $game)
             <div class="grid_1_of_4 images_1_of_4">
-                <h4><a href="article/{{$game->id}}">{{ $game->name }}</a></h4>
-                <a href="article/{{$game->id}}"><img src="images/games/{{ $game->photo->name }}" alt="" /></a>
+                <h4><a href="{{ route('article', $game->id) }}">{{ $game->name }}</a></h4>
+                <a href="{{ route('article', $game->id) }}"><img src="images/games/{{ $game->photo->name }}" alt="" /></a>
                 <div class="price-details">
                     <div class="price-number">
                         <p><span class="rupees">{{ $game->price }} € </span></p>
                     </div>
                     <div class="add-cart">
-                        <h4><a href="article/{{$game->id}}">Add to cart</a></h4>
+                        <h4><a href="{{ route('article', $game->id) }}">Add to cart</a></h4>
                     </div>
                     <div class="clear"></div>
                 </div>
