@@ -13,7 +13,7 @@
                         <p><span class="rupees">{{ $game->price }} € </span></p>
                     </div>
                     <div class="add-cart">
-                        <h4><a href="preview.html">More Info</a></h4>
+                        <h4><a href="article/{{$game->id}}">More Info</a></h4>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -21,5 +21,5 @@
             @endforeach
         </div>
     </div>
-    {{-- @include('imports.rightsidebar') --}}
+    @include('imports.rightsidebar')
 @endsection
