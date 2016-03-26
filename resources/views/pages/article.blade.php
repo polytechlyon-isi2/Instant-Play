@@ -9,17 +9,12 @@
 
 @extends('layouts.preview')
 
-
-
-
-
 @section('back-links')
     <li><a href="#">Home</a> ::</li>
     <li><a href="#">Product Page</a> ::</li>
     <li>Product Name</li>
     <div class="clear"> </div>
 @endsection
-
 
 @section('product-images')
     <li>
@@ -45,15 +40,11 @@
             <li><span>Units in Stock:</span>&nbsp; {{$game->stock}}</li>
         </ul>
     </div>
-
-
-
 @endsection
 
 @section('product-informations')
     {{$game->description}}
 @endsection
-
 
 
 @section('spec-os')
