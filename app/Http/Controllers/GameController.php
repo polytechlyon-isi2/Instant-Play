@@ -12,7 +12,7 @@ class GameController extends Controller
 {
     protected $gameRepository;
 
-    protected $nbrPerPage = 20;
+    protected $nbrPerPage = 12;
 
     public function __construct(GameRepository $gameRepository)
     {
