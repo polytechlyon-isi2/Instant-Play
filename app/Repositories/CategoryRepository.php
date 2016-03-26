@@ -10,6 +10,7 @@ namespace App\Repositories;
 
 use App\Models\Category;
 use Illuminate\Support\Str;
+use DB;
 
 class CategoryRepository
 {
@@ -44,7 +45,6 @@ class CategoryRepository
             } else {
 
                 $game->categories()->attach($category_ref->id);
-
             }
         }
     }
@@ -53,5 +53,23 @@ class CategoryRepository
     {
         $this->category->findOrFail($id)->delete();
     }
+
+
+
+    public function getWhole()
+    {
+        return $this->queryWhole();
+    }
+
+
+    private function queryWhole()
+    {
+        $categories = DB::table('category')->select('id','name')->groupBy('id')->get();
+        return $categories;
+    }
+
+
+
+
 
 }

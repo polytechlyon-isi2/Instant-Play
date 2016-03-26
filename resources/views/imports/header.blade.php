@@ -34,7 +34,7 @@
 
         <div class="header_bottom">
             <div class="slider-text">
-                <h2>Instant Play <br/>You click you play</h2>
+                <h2>Instant Play <br/>You click, you play</h2>
                 <p>Buy CD keys for PC games<br/> Lowest prices of the world.</p>
                 <a href="#">More info</a>
             </div>

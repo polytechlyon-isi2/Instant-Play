@@ -14,6 +14,7 @@
 // Routes with controllers
 
 Route::get('/', 'GameController@index');
+//Route::get('/', 'CategoryController@index');
 
 Route::get('/article/{n}', 'GameController@show')->where('n', '[0-9]+');
 

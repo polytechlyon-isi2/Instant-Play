@@ -10,12 +10,9 @@
 <div class="categories">
     <ul>
         <h3>Browse All Categories</h3>
-        <li><a href="#">Appliances</a></li>
-        <li><a href="#">Sports Equipments</a></li>
-        <li><a href="#">Computers & Electronics</a></li>
-        <li><a href="#">Office supplies</a></li>
-        <li><a href="#">Health & Beauty</a></li>
-        <li><a href="#">Home & Garden</a></li>
+{{--        @foreach($categories as $category)
+            <li><a href="#">{{$category->name}}</a></li>
+        @endforeach--}}
     </ul>
 </div>
 <div class="categories">
