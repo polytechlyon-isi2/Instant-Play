@@ -33,6 +33,10 @@ class Game extends Model
         return $this->hasMany('App\Models\Photo');
     }
 
+    public function photo() {
+        return $this->hasOne('App\Models\Photo');
+    }
+
     // n:n
     public function commands()
     {
