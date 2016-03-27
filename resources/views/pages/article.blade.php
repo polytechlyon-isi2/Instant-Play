@@ -44,8 +44,8 @@
     {{ $game->description }}
 @endsection
 
-
 {{--
+
 @section('spec-os')
     {{ $game->spec->os }}
 @endsection
@@ -64,8 +64,8 @@
 
 @section('spec-hdd')
     {{ $game->spec->hdd }}
-@endsection
---}}
+@endsection--}}
+
 
 
 @section('product-videos')

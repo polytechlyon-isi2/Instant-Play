@@ -13,21 +13,21 @@
 
 // Routes with controllers
 
-Route::get('/', array('as' => 'home', 'uses' => 'GameController@index'));
+Route::get('/', array('uses' => 'GameController@index','as' => 'home'));
 //Route::get('/', 'CategoryController@index');
 
-Route::get('/article/{n}', array('as' => 'article', 'uses' => 'GameController@show'))->where('n', '[0-9]+');
+Route::get('/article/{n}', array('uses' => 'GameController@show','as' => 'article'))->where('n', '[0-9]+');
 
 Route::get('/category/{n}', 'CategoryController@show')->where('n', '[0-9]+');
 
 Route::get('/cart', 'CartController@index');
 
-Route::get('/contact', 'ContactController@getInfos');
-Route::post('/contact', 'ContactController@postInfos');
+Route::get('/contact',['uses' => 'ContactController@getInfos', 'as' => 'contact']);
+Route::post('/contact', ['uses' => 'ContactController@postInfos', 'as' => 'postContact']);
 
-Route::get('/user', 'UserController@index');
+Route::get('/user', ['uses' => 'UserController@index', 'as' => 'user']);
 
-//Routes pour toute la partie administration
+//Routes pour toute la partie administration (URL avec /admin/...
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     //TODO Ajouter ici les routes pour l'administration
 });
