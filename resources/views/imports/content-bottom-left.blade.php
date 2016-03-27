@@ -32,22 +32,3 @@
     <p>So we're committed to giving you all the tools to make the right decision with minimum fuss. </p>
 </div>
 
-{{--
-
-<div class="add-banner">
-    <img src="images/camera.png" alt="" />
-    <div class="banner-desc">
-        <h4>Electronics</h4>
-        <a href="#">More Info</a>
-    </div>
-    <div class="clear"></div>
-</div>
-<div class="add-banner add-banner2">
-    <img src="images/computer.png" alt="" />
-    <div class="banner-desc">
-        <h4>Computers</h4>
-        <a href="#">More Info</a>
-    </div>
-    <div class="clear"></div>
-</div>
---}}

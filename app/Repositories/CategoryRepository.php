@@ -22,6 +22,7 @@ class CategoryRepository
         $this->category = $category;
     }
 
+    
     public function store($game, $categories)
     {
         $categories = explode(',', $categories);
@@ -49,6 +50,7 @@ class CategoryRepository
         }
     }
 
+
     public function destroy($id)
     {
         $this->category->findOrFail($id)->delete();
@@ -67,9 +69,4 @@ class CategoryRepository
         $categories = DB::table('category')->select('id','name')->groupBy('id')->get();
         return $categories;
     }
-
-
-
-
-
 }

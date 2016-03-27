@@ -50,39 +50,4 @@
             </div>
         </li>
     </ul>
-
-    {{--<div class="community-poll">
-        <h3>Community POll</h3>
-        <p>What is the main reason for you to purchase products online?</p>
-        <div class="poll">
-            <form>
-                <ul>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="1">
-                        <span class="label"><label>More convenient shipping and delivery </label></span>
-                    </li>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="2">
-                        <span class="label"><label for="vote_2">Lower price</label></span>
-                    </li>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="3">
-                        <span class="label"><label for="vote_3">Bigger choice</label></span>
-                    </li>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="5">
-                        <span class="label"><label for="vote_5">Payments security </label></span>
-                    </li>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="6">
-                        <span class="label"><label for="vote_6">30-day Money Back Guarantee </label></span>
-                    </li>
-                    <li>
-                        <input type="radio" name="vote" class="radio" value="7">
-                        <span class="label"><label for="vote_7">Other.</label></span>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>--}}
 </div>

@@ -15,11 +15,9 @@
                     <div class="add-cart">
                         <h4><a href="{{ route('article', $game->id) }}">Add to cart</a></h4>
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             @endforeach
-
         </div>
     </div>
     @include('imports.rightsidebar')

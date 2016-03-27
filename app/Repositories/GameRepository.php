@@ -13,7 +13,6 @@ use DB;
 
 class GameRepository
 {
-
     protected $game;
 
     public function __construct(Game $game)
@@ -21,7 +20,7 @@ class GameRepository
         $this->game = $game;
     }
 
-    // Query
+    // Queries
     private function queryWithCategories()
     {
         return $this->game->with('categories')
@@ -86,5 +85,4 @@ class GameRepository
 
         $game->delete();
     }
-
 }
