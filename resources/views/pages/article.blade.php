@@ -12,23 +12,28 @@
 @section('back-links')
     <li><a href="home.blade.php">Home</a> ::</li>
     <li><a href="#">Product Page</a> ::</li>
-    <li>Product Name</li>
+    <li> {{ $game->game_name }} </li>
     <div class="clear"> </div>
 @endsection
 
 @section('product-images')
+
+    <img class="etalage_thumb_image" src="../images/games/{{ $game->photo_name }}" />
+
+    {{-- ci-dessous : pas encore fonctionnel - tableau vide --}}
     @foreach($photos as $photo)
         <li>
             <a href="optionallink.html">
-                <img class="etalage_thumb_image" src="images/games/{{ $photo->name }}" />
-                <img class="etalage_source_image" src="images/games/{{ $photo->name }}" title="" />
+                <img class="etalage_thumb_image" src="../images/games/{{ $photo->photo->name }}" />
+                <img class="etalage_source_image" src="../images/games/{{ $photo->photo->name }}" title="" />
             </a>
         </li>
     @endforeach
+
 @endsection
 
 @section('product-info')
-    <h2>{{ $game->name }}</h2>
+    <h2>{{ $game->game_name }}</h2>
     <p>{{ $game->description }}</p>
     <div class="price">
         <p>Price: <span>${{ $game->price }}</span></p>

@@ -36,8 +36,9 @@ class GameRepository
             ->join('spec', 'game.spec_id', '=', 'spec.id')
             ->join('platform', 'game.platform_id', '=', 'platform.id')
             ->join('studio', 'game.studio_id', '=', 'studio.id')
+            ->leftjoin('photo', 'game.id', '=', 'photo.game_id')
             ->where('game.id',$id)
-            ->select('game.*', 'spec.*', 'platform.*', 'studio.*')
+            ->select('game.*', 'game.name as game_name', 'spec.*', 'platform.*', 'studio.*', 'photo.name as photo_name')
             ->first();
         return $game;
     }
@@ -73,8 +74,7 @@ class GameRepository
             ->get();
         return $photos; */
 
-        return $this->game->with('photos')
-            ->orderBy('game.id', 'desc');
+        return $this->game->with('photos');
     }
 
     public function getPhotosWithGameId($game_id)
