@@ -13,6 +13,6 @@ class Spec extends Model
     // 1:1
     public function game()
     {
-        return $this->belongsTo('App\Models\Game');
+        return $this->hasOne('App\Models\Game');
     }
 }

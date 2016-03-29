@@ -29,7 +29,16 @@ class GameRepository
 
     private function queryWithId($id)
     {
-        $game = DB::table('game')->where('id',$id)->first();
+        //return $this->game->join('spec', 'game.spec_id', '=', 'spec.id')
+        //    ->where('game.id',$id)->first();
+
+        $game = DB::table('game')
+            ->join('spec', 'game.spec_id', '=', 'spec.id')
+            ->join('platform', 'game.platform_id', '=', 'platform.id')
+            ->join('studio', 'game.studio_id', '=', 'studio.id')
+            ->where('game.id',$id)
+            ->select('game.*', 'spec.*', 'platform.*', 'studio.*')
+            ->first();
         return $game;
     }
 
@@ -53,6 +62,24 @@ class GameRepository
     public function getWholePaginate($n)
     {
         return $this->queryWhole()->paginate($n);
+    }
+
+    // photo
+    private function queryPhotosWithGameId($game_id)
+    {
+        /*$photos = DB::table('photo')
+            ->where('game_id',$game_id)
+            ->select('photo.*')
+            ->get();
+        return $photos; */
+
+        return $this->game->with('photos')
+            ->orderBy('game.id', 'desc');
+    }
+
+    public function getPhotosWithGameId($game_id)
+    {
+        return $this->queryPhotosWithGameId($game_id);
     }
 
     // GetForPaginate

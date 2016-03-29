@@ -17,14 +17,14 @@
 @endsection
 
 @section('product-images')
-{{--    @foreach($game->photos as $photo)
+    @foreach($photos as $photo)
         <li>
             <a href="optionallink.html">
-                <img class="etalage_thumb_image" src="images/games/{{ $photo->name // image miniature }}" />
-                <img class="etalage_source_image" src="images/games/{{ $photo->name // image large }}" title="" />
+                <img class="etalage_thumb_image" src="images/games/{{ $photo->name }}" />
+                <img class="etalage_source_image" src="images/games/{{ $photo->name }}" title="" />
             </a>
         </li>
-    @endforeach--}}
+    @endforeach
 @endsection
 
 @section('product-info')
@@ -44,28 +44,27 @@
     {{ $game->description }}
 @endsection
 
-{{--
+
 
 @section('spec-os')
-    {{ $game->spec->os }}
+    {{$game->os}}
 @endsection
 
 @section('spec-cpu')
-    {{ $game->spec->cpu }}
+    {{ $game->cpu }}
 @endsection
 
 @section('spec-gpu')
-    {{ $game->spec->gpu }}
+    {{ $game->gpu }}
 @endsection
 
 @section('spec-ram')
-    {{ $game->spec->ram }}
+    {{ $game->ram }}
 @endsection
 
 @section('spec-hdd')
-    {{ $game->spec->hdd }}
-@endsection--}}
-
+    {{ $game->hdd }}
+@endsection
 
 
 @section('product-videos')

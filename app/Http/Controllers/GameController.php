@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Repositories\GameRepository;
 use App\Repositories\CategoryRepository;
+use App\Repositories\PhotoRepository;
 
 use App\Http\Requests;
 
@@ -53,14 +54,9 @@ class GameController extends Controller
     public function show($id)
     {
         $game = $this->gameRepository->getWithId($id);
-        //$game = Game::find($id);
-        return view('pages.article', compact('game'));
+        $photos = $this->gameRepository->getPhotosWithGameId($id);
 
-/*        //$games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
-        $games = $this->gameRepository->getWholePaginate($this->nbrPerPage);
-        $links = $games->setPath('')->render();
-
-        return view('pages.article', compact('games', 'links'));*/
+        return view('pages.article', compact('game', 'photos'));
     }
 
     public function destroy($id)
