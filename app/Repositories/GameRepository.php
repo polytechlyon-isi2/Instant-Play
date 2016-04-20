@@ -91,9 +91,9 @@ class GameRepository
                 $q->where('category.id', $category);
             })->paginate($n);*/
 
-        $game = DB::table('game')
-            ->where('category',$category)->paginate($n);
-        return $game;
+        $games = DB::table('game')
+            ->where('category_id',$category)->paginate($n);
+        return $games;
     }
 
     public function store($inputs)

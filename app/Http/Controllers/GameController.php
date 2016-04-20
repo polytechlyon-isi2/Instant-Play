@@ -12,6 +12,7 @@ use App\Http\Requests;
 class GameController extends Controller
 {
     protected $gameRepository;
+    protected $categoryRepository;
 
     protected $nbrPerPage = 12;
 
@@ -28,8 +29,10 @@ class GameController extends Controller
         //$games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
         $games = $this->gameRepository->getWholePaginate($this->nbrPerPage);
         $links = $games->setPath('')->render();
+        //$categories = $this->categoryRepository->getWhole();
 
         return view('pages.welcome', compact('games', 'links'));
+        //return view('pages.welcome', compact('games', 'links', 'categories'));
     }
 
     public function create()
@@ -65,7 +68,7 @@ class GameController extends Controller
         return redirect()->back();
     }
 
-    public function indexCategory($category)
+    public function indexCategoryGames($category)
     {
 /*        $game = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
         $links = $game->setPath('')->render();
@@ -76,6 +79,6 @@ class GameController extends Controller
         $games = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
 
         return view('pages.category', compact('games'))
-            ->with('category', 'Catégories : ' . $category);
+            ->with('games', 'Catégories : ' . $category);
     }
 }

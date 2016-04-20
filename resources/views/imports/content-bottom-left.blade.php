@@ -11,7 +11,7 @@
     <ul>
         <h3>Browse All Categories</h3>
 {{--        @foreach($categories as $category)
-            <li><a href="#">{{$category->name}}</a></li>
+            <li><a href="/category/{{$category->id}}">{{$category->name}}</a></li>
         @endforeach--}}
     </ul>
 </div>
