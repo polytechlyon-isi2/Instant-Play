@@ -27,6 +27,8 @@ Route::post('/contact', ['uses' => 'ContactController@postInfos', 'as' => 'postC
 
 Route::get('/user', ['uses' => 'UserController@index', 'as' => 'user']);
 
+Route::get('/moreInfo', function(){return view('pages.moreInfo');});
+
 //Routes pour toute la partie administration (URL avec /admin/...
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     //TODO Ajouter ici les routes pour l'administration
