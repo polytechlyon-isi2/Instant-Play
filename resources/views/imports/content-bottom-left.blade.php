@@ -31,4 +31,3 @@
     <p><span>We want you to be happy with your purchase.</span></p>
     <p>So we're committed to giving you all the tools to make the right decision with minimum fuss. </p>
 </div>
-

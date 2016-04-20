@@ -45,7 +45,7 @@ class Game extends Model
 
     public function categories()
     {
-        return $this->belongsToMany('App\Models\Category');
+        return $this->belongsTo('App\Models\Category');
     }
 
     public function reductions()

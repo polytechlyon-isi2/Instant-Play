@@ -47,7 +47,6 @@ class GameController extends Controller
         {
             $categoryRepository->store($game, $inputs['categories']);
         }
-
         return redirect(route('game.index'));
     }
 
@@ -68,10 +67,15 @@ class GameController extends Controller
 
     public function indexCategory($category)
     {
-        $game = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
+/*        $game = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
         $links = $game->setPath('')->render();
 
         return view('games.liste', compact('games', 'links'))
+            ->with('category', 'Catégories : ' . $category);*/
+
+        $games = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
+
+        return view('pages.category', compact('games'))
             ->with('category', 'Catégories : ' . $category);
     }
 }

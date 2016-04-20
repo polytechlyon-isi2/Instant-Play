@@ -85,11 +85,15 @@ class GameRepository
     // GetForPaginate
     public function getWithCategoriesForCategoryPaginate($category, $n)
     {
-        return $this->queryWithCategories()
+ /*       return $this->queryWithCategories()
             ->whereHas('category', function($q) use ($category)
             {
                 $q->where('category.id', $category);
-            })->paginate($n);
+            })->paginate($n);*/
+
+        $game = DB::table('game')
+            ->where('category',$category)->paginate($n);
+        return $game;
     }
 
     public function store($inputs)

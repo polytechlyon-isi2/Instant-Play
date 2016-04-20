@@ -16,7 +16,7 @@ class CategoryController extends Controller
     {
         $this->middleware('auth', ['except' => ['index', 'show', 'indexCategory']]);
         $this->middleware('admin', ['only' => 'destroy']);
-
+        
         $this->categoryRepository = $categoryRepository;
     }
 
@@ -24,5 +24,11 @@ class CategoryController extends Controller
     {
         $categories = $this->categoryRepository->getWhole();
         return view('pages.welcome', compact('categories'));
+    }
+
+    public function showGamesRelated($id)
+    {
+        $category = $this->categoryRepository->getWithId($id);
+        return view('pages.category', compact('category'));
     }
 }

@@ -47,7 +47,19 @@ class CreateGameTable extends Migration
                 ->on('spec')
                 ->onDelete('restrict')
                 ->onUpdate('restrict');
+
+
+
+            //Category
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')
+                ->references('id')
+                ->on('category')
+                ->onDelete('restrict')
+                ->onUpdate('restrict');
         });
+
+
     }
 
     /**

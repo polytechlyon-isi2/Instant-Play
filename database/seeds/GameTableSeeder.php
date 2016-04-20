@@ -38,7 +38,8 @@ Un gameplay amélioré : DARK SOULS™ II inclut des animations fluides basées 
             'video' => 'https://youtu.be/mbDmI_2IVQ8',
             'platform_id' => 1,
             'studio_id' => 1,
-            'spec_id' => 1
+            'spec_id' => 1,
+            'category_id' => 1
         ]);
 
         DB::table('game')->insert([
@@ -56,7 +57,8 @@ Un gameplay amélioré : DARK SOULS™ II inclut des animations fluides basées 
             'video' => 'https://www.youtube.com/embed/9DM7NsxOS0Q',
             'platform_id' => 2,
             'studio_id' => 2,
-            'spec_id' => 2
+            'spec_id' => 2,
+            'category_id' => 2
         ]);
 
     }
