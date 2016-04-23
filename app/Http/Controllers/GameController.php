@@ -78,7 +78,7 @@ class GameController extends Controller
 
         $games = $this->gameRepository->getWithCategoriesForCategoryPaginate($category, $this->nbrPerPage);
 
-        return view('pages.category', compact('games'))
-            ->with('games', 'Catégories : ' . $category);
+        return view('pages.category', compact('games'));
+ 
     }
 }
