@@ -12,7 +12,6 @@
     <div class="content-bottom-right">
         <h3>Browse All Products</h3>
         <div class="section group">
-
             @foreach($games as $game)
                 <div class="grid_1_of_4 images_1_of_4">
                     <h4><a href="{{ route('article', array('n' => $game->id )) }}">{{ $game->name }}</a></h4>
