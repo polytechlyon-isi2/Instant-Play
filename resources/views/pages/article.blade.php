@@ -18,7 +18,12 @@
 
 @section('product-images')
 
-    <img class="etalage_thumb_image" src="../images/games/{{ $game->photo_name }}" />
+    <li>
+        <a href="optionallink.html">
+            <img class="etalage_thumb_image" src="../images/games/{{ $game->photo_name }}" />
+        </a>
+    </li>
+
 
     {{-- ci-dessous : pas encore fonctionnel - tableau vide --}}
     @foreach($photos as $photo)
@@ -40,7 +45,7 @@
     </div>
     <div class="available">
         <ul>
-            <li><span>Units in Stock:</span>&nbsp; {{ $game->stock }}</li>
+            <li><span>Units in Stock:</span>&nbsp; {{ $game->stock }} pieces</li>
         </ul>
     </div>
 @endsection
@@ -70,7 +75,6 @@
 @section('spec-hdd')
     {{ $game->hdd }}
 @endsection
-
 
 @section('product-videos')
     <div class="embed-responsive embed-responsive-16by9">

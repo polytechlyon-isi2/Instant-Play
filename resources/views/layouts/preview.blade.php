@@ -6,8 +6,7 @@
  * Time: 10:57
  */
 ?>
-
-@include('imports.header')
+@include('imports.header_preview')
 <div class="main">
     <div class="wrap">
         <div class="preview-page">
@@ -19,7 +18,19 @@
                     <div class="product-details">
                         <div class="grid images_3_of_2">
                             <ul id="etalage">
-                                @yield('product-images')
+                                        @yield("product-images")
+                                <li>
+                                    <img class="etalage_thumb_image" src="images/preview-small-img2.png"  />
+                                    <img class="etalage_source_image" src="images/preview-large-img2.jpg" title="" />
+                                </li>
+                                <li>
+                                    <img class="etalage_thumb_image" src="images/preview-small-img3.png"  />
+                                    <img class="etalage_source_image" src="images/preview-large-img3.jpg" />
+                                </li>
+                                <li>
+                                    <img class="etalage_thumb_image" src="images/preview-small-img4.png" />
+                                    <img class="etalage_source_image" src="images/preview-large-img4.jpg" />
+                                </li>
                             </ul>
                         </div>
                         <div class="desc span_3_of_2">
@@ -32,6 +43,7 @@
                                 <div class="clear"></div>
                             </div>
                             <div class="colors-share">
+
                                 <div class="social-share">
                                     <h4>Share Product</h4>
                                     <ul>
@@ -77,19 +89,47 @@
 
                                 <div class="review">
                                     @yield('review')
+                                    <script type="text/javascript">
+                                        /* place inside document ready function */
+                                        $(".rating").starRating({
+                                            minus: true // step minus button
+                                        });
+                                    </script>
                                 </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-                {{--@include('imports.rightsidebar')--}}
             </div>
         </div>
     </div>
-    <div class="content_top">
-        {{--@include('imports.topbar_recently_viewed')--}}
+</div>
+
+<div class="footer">
+    <div class="wrap">
+        <div class="copy_right">
+            <p>Copy rights (c). All rights Reseverd | Template by  <a href="http://w3layouts.com" target="_blank">W3Layouts</a> </p>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Terms of Use</a> : </li>
+                <li><a href="#">Privacy Policy</a> : </li>
+                <li><a href="contact.html">Contact Us</a> : </li>
+                <li><a href="#">Sitemap</a></li>
+            </ul>
+        </div>
     </div>
 </div>
-<script src="<?php echo asset('js/easyResponsiveTabs.js')?>" type="text/javascript"></script>
-<link href="<?php echo asset('css/easy-responsive-tabs.css')?>" rel="stylesheet" type="text/css" media="all"/>
-@include('imports.footer')
+<script type="text/javascript">
+    $(document).ready(function() {
+        $().UItoTop({ easingType: 'easeOutQuart' });
+
+    });
+</script>
+<a href="#" id="toTop"> </a>
+<script type="text/javascript" src="{{url('/js/navigation.js')}}"></script>
+</body>
+</html>
+

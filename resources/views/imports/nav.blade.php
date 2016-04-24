@@ -96,7 +96,6 @@
                 </ul>
             </li>
         @endif
-
     </ul>
     <span class="left-ribbon"> </span>
     <span class="right-ribbon"> </span>
