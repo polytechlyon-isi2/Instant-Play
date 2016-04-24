@@ -20,5 +20,5 @@
             @endforeach
         </div>
     </div>
-    @include('imports.rightsidebar')
+    {{--@include('imports.rightsidebar')--}}
 @endsection
