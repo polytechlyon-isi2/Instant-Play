@@ -29,5 +29,4 @@
             @endforeach
         </div>
     </div>
-    @include('imports.rightsidebar')
 @endsection
