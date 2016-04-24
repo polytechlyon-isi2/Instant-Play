@@ -82,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                @include('imports.rightsidebar')
+                {{--@include('imports.rightsidebar')--}}
             </div>
         </div>
     </div>
