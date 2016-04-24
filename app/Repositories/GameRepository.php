@@ -91,8 +91,11 @@ class GameRepository
                 $q->where('category.id', $category);
             })->paginate($n);*/
 
+
+
         $games = DB::table('game')
             ->where('category_id',$category)->paginate($n);
+        //$games = $this->game->with('photos')->where('category_id',$category)->orderBy('game.id','desc');
         return $games;
     }
 
