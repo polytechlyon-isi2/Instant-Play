@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Repositories\GameRepository;
 use App\Repositories\CategoryRepository;
 use App\Repositories\PhotoRepository;
+use DB;
 
 use App\Http\Requests;
 
@@ -26,13 +27,11 @@ class GameController extends Controller
 
     public function index()
     {
-        //$games = $this->gameRepository->getWithCategoriesPaginate($this->nbrPerPage);
         $games = $this->gameRepository->getWholePaginate($this->nbrPerPage);
         $links = $games->setPath('')->render();
-        //$categories = $this->categoryRepository->getWhole();
+        $categories = DB::table('category')->get();
 
-        return view('pages.welcome', compact('games', 'links'));
-        //return view('pages.welcome', compact('games', 'links', 'categories'));
+        return view('pages.welcome', compact('games', 'categories','links'));
     }
 
     public function create()

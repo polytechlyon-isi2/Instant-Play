@@ -10,11 +10,11 @@
 <div class="categories">
     <ul>
         <h3>Browse All Categories</h3>
-        {{--
+
             @foreach($categories as $category)
-                <li><a href="/category/{{$category->id}}">{{$category->name}}</a></li>
+                    <li><a href="{{route('category', array('n' => $category->id )) }}">{{$category->name}}</a></li>
             @endforeach
-        --}}
+
     </ul>
 </div>
 <div class="categories">
