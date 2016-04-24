@@ -87,7 +87,7 @@
         </div>
     </div>
     <div class="content_top">
-        @include('imports.topbar_recently_viewed')
+        {{--@include('imports.topbar_recently_viewed')--}}
     </div>
 </div>
 <script src="<?php echo asset('js/easyResponsiveTabs.js')?>" type="text/javascript"></script>
