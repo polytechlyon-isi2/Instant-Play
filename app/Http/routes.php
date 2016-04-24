@@ -18,9 +18,6 @@ Route::get('/', array('uses' => 'GameController@index','as' => 'home'));
 
 Route::get('/article/{n}', array('uses' => 'GameController@show','as' => 'article'))->where('n', '[0-9]+');
 
-
-Route::get('/cart', 'CartController@index');
-
 Route::get('/contact',['uses' => 'ContactController@getInfos', 'as' => 'contact']);
 Route::post('/contact', ['uses' => 'ContactController@postInfos', 'as' => 'postContact']);
 
@@ -47,6 +44,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 
 
 Route::group(['middleware' => 'web'], function () {
+    Route::get('/cart','CartController@index');
+    Route::get('/cart/add/{n}', array('uses' => 'CartController@store', 'as' => 'cartStore'))->where('n', '[0-9]+');
+
     Route::auth();
 
     // Authentication routes...
